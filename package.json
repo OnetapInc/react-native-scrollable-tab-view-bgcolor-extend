@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brentvatne/react-native-scrollable-tab-view.git"
+    "url": "https://github.com/OnetapInc/react-native-scrollable-tab-view"
   },
   "keywords": [
     "react-native-component",
@@ -19,15 +19,15 @@
     "tab",
     "scrollable"
   ],
-  "author": "Brent Vatne",
+  "author": "OnetapInc",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brentvatne/react-native-scrollable-tab-view/issues"
+    "url": "https://github.com/OnetapInc/react-native-scrollable-tab-view/issues"
   },
   "peerDependencies": {
     "react-native": ">=0.20.0"
   },
-  "homepage": "https://github.com/brentvatne/react-native-scrollable-tab-view#readme",
+  "homepage": "https://github.com/OnetapInc/react-native-scrollable-tab-view",
   "dependencies": {
     "react-timer-mixin": "^0.13.3"
   },

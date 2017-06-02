@@ -129,7 +129,6 @@ const ScrollableTabBar = React.createClass({
     const fontWeight = isTabActive ? 'bold' : 'normal';
 
     let tabStyle = (isTabActive && this.props.activeTabStyle) ? this.props.activeTabStyle : this.props.tabStyle;
-
     return <Button
       key={`${name}_${page}`}
       accessible={true}
