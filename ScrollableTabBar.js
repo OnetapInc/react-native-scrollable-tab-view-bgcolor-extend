@@ -25,6 +25,7 @@ const ScrollableTabBar = React.createClass({
     scrollOffset: React.PropTypes.number,
     style: ViewPropTypes.style,
     tabStyle: ViewPropTypes.style,
+    activeTabStyle: ViewPropTypes.style,
     tabsContainerStyle: ViewPropTypes.style,
     textStyle: Text.propTypes.style,
     renderTab: React.PropTypes.func,
