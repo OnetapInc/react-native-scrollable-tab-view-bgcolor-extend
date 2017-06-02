@@ -127,8 +127,8 @@ const ScrollableTabBar = React.createClass({
     const { activeTextColor, inactiveTextColor, textStyle, } = this.props;
     const textColor = isTabActive ? activeTextColor : inactiveTextColor;
     const fontWeight = isTabActive ? 'bold' : 'normal';
+    const tabStyle = (isTabActive && this.props.activeTabStyle) ? this.props.activeTabStyle : this.props.tabStyle;
 
-    let tabStyle = (isTabActive && this.props.activeTabStyle) ? this.props.activeTabStyle : this.props.tabStyle;
     return <Button
       key={`${name}_${page}`}
       accessible={true}
