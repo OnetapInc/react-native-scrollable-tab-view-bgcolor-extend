@@ -21,6 +21,7 @@ const DefaultTabBar = React.createClass({
     activeTabStyle: ViewPropTypes.style,
     renderTab: React.PropTypes.func,
     underlineStyle: ViewPropTypes.style,
+      shadowEffect: ViewPropTypes.style,
   },
 
   getDefaultProps() {
@@ -28,6 +29,7 @@ const DefaultTabBar = React.createClass({
       activeTextColor: 'navy',
       inactiveTextColor: 'black',
       backgroundColor: null,
+        shadowEffect: {}
     };
   },
 
@@ -71,7 +73,7 @@ const DefaultTabBar = React.createClass({
       inputRange: [0, 1, ], outputRange: [0,  containerWidth / numberOfTabs, ],
     });
     return (
-      <View style={[styles.tabs, {backgroundColor: this.props.backgroundColor, }, this.props.style, ]}>
+      <View style={[styles.tabs, {backgroundColor: this.props.backgroundColor, ...this.props.shadowEffect }, this.props.style, ]}>
         {this.props.tabs.map((name, page) => {
           const isTabActive = this.props.activeTab === page;
           const renderTab = this.props.renderTab || this.renderTab;
